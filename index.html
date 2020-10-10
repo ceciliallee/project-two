@@ -4,13 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
+    <!-- link to script.js - make sure to defer -->
+    <script src="./js/script.js" defer></script>
     <title>SASA - Sexual Assault Support and Awareness</title>
 </head>
 <body>
     <!-- nav element -->
     <nav>
         <a id = "logo" href="./index.html"><img src="./img/logo.svg" alt="logo"></a>
-        <ul>
+        <img id="hamburger" src="./img/menu.svg">
+        <div id="overlapy"></div>
+        <ul id="menu">
             <li><a href="stories/index.html">Stories</a></li>
             <li><a href="after-an-assault/index.html">After An Assault</a></li>
             <li><a href="loved-ones/index.html">Loved Ones</a></li>
@@ -18,11 +22,23 @@
         </ul>
     </nav>
 
-    <!-- main -->
+    <img class = "blob" src="./img/blob.svg" alt="blob">
 
+    <!-- main -->
     <main>
         <img id="landing" src="img/landing.jpg" alt="metoo">
-        
+        <article class="main">
+            <p>You are not alone.</p>
+            <div class="main-buttons">
+                <a href="">Stories</a> 
+                <a href="">After an Assault</a> 
+                <a href="">Loved Ones</a> 
+            </div>
+        </article>
+
+        <div class="safety-exit">
+            <a href="https://google.com">Safety Exit</a>
+        </div>
 
     </main>
     
