@@ -122,6 +122,7 @@ nav ul li a {
 .card {
     color: white;
     background-color:#C73C63;
+    border-radius: 5px;
     padding: 60px;
     width: 40%;
     font-size: 20px;
