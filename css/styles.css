@@ -1,6 +1,15 @@
-body {
+html, body {
     font-family: Helvetica, sans-serif;
     overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    margin-bottom: 60px;
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
 }
 
 nav {
@@ -34,6 +43,15 @@ nav ul li a {
 #overlay, #hamburger {
     display: none;
     
+}
+
+.page-title {
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    color: #C73C63;
+    margin-bottom: 60px;
+    margin-top: 20px;
 }
 
 .blob {
@@ -81,11 +99,33 @@ nav ul li a {
     text-decoration: none;
 }
 
+#menu li:hover {
+    font-weight: bold;
+}
+
 .main-buttons a:hover {
     color: white;
     background-color: #C73C63;
     transition: background-color 2s;
     transition: color 1s;
+}
+
+/* Content Credits Cards */
+
+.credits-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.card {
+    color: white;
+    background-color:#C73C63;
+    padding: 60px;
+    width: 40%;
+    font-size: 20px;
+    line-height: 3vh;
 }
 
 /* Safety Exit Button */
@@ -109,6 +149,20 @@ nav ul li a {
     background-color: #C73C63;
     transition: background-color 1s;
 }
+
+/* footer */
+
+footer {
+    background: #C73C63;
+    color: white;
+    padding: 20px 20px;
+    text-align: center;
+}
+
+footer a {
+    color: white;
+}
+
 
 /* nav desktop*/
 @media (min-width: 768px) {
