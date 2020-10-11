@@ -41,7 +41,7 @@ nav ul li a {
     z-index: 1;
     bottom: -50px;
     right: -50px;
-    width: 100%;
+    width: 1950px;
     
 }
 
@@ -50,12 +50,21 @@ nav ul li a {
     position: absolute;
     z-index: 1;
     padding-left: 60vw;
-    padding-top: 39vh;
+    padding-top: 35vh;
 }
 
-.main p {
+.main .heading {
     font-size: 40px;
     color: #C73C63;
+    font-weight: lighter;
+    margin-bottom: 10px;
+}
+
+.main .body {
+    color: #E87696;
+    font-size: 17px;
+    font-weight: lighter;
+    margin-bottom: 50px;
 }
 
 .main-buttons {
@@ -101,7 +110,7 @@ nav ul li a {
     transition: background-color 1s;
 }
 
-
+/* nav desktop*/
 @media (min-width: 768px) {
     nav {
         padding: 0 40px;
@@ -170,7 +179,7 @@ nav ul li a {
     }
 
     #logo img {
-        width: 35%;
+        width: 100px;
     }
 }
 
