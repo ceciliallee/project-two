@@ -1,6 +1,6 @@
 html, body {
     font-family: Helvetica, sans-serif;
-    overflow: hidden;
+    /* overflow: hidden; */
     margin: 0;
     padding: 0;
 }
@@ -11,6 +11,8 @@ main {
     margin-left: 30px;
     margin-right: 30px;
 }
+
+/*Nav Bar*/
 
 nav {
     height: 80px;
@@ -51,7 +53,12 @@ nav ul li a {
     font-weight: bold;
     color: #C73C63;
     margin-bottom: 60px;
-    margin-top: 20px;
+    margin-top: 40px;
+}
+
+.link {
+    text-decoration: none;
+    color: inherit;
 }
 
 .blob {
@@ -59,7 +66,7 @@ nav ul li a {
     z-index: 1;
     bottom: -50px;
     right: -50px;
-    width: 1950px;
+    width: 100%;
     
 }
 
@@ -68,7 +75,7 @@ nav ul li a {
     position: absolute;
     z-index: 1;
     padding-left: 60vw;
-    padding-top: 35vh;
+    padding-top: 30vh;
 }
 
 .main .heading {
@@ -132,7 +139,7 @@ nav ul li a {
 /* Safety Exit Button */
 
 .safety-exit {
-    position: absolute;
+    position: fixed;
     z-index: 1;
     padding: 20px 25px;
     background-color: #FFB7CB;
@@ -150,6 +157,56 @@ nav ul li a {
     background-color: #C73C63;
     transition: background-color 1s;
 }
+
+/* After An Assault */
+
+.after-an-assault-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.after-an-assault-top img {
+    width: 90%;
+}
+
+.after-an-assault-top p {
+    width: 100%;
+    margin-left: 5vw;
+    color: #E87696;
+    text-align: center;
+}
+
+.after-card {
+    width: 50%;
+    padding: 30px 50px;
+    color: white;
+    background-color:#C73C63;
+    display: flex;
+    align-items: center;
+    
+}
+
+.after-top {
+    display: flex;
+}
+
+.article-heading {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.after-an-assault-content {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.after-text {
+    line-height: 5vh;
+    margin-left: 80px;
+}
+
 
 /* footer */
 
@@ -186,7 +243,7 @@ footer a {
 
     nav ul {
         display: none;
-        max-width: 40vw;
+        max-width: 56vw;
         width: 100%;
         height: 100vh;
         background: white;
@@ -195,6 +252,7 @@ footer a {
         left: 0;
         padding: 20px;
         box-sizing: border-box;
+        z-index: 1;
     }
 
     nav ul.active {
@@ -222,7 +280,7 @@ footer a {
         left: 0;
         bottom:0;
         right: 0;
-        z-index: 0;
+        z-index: 1;
     }
 
     #overlay.active {
