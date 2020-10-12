@@ -57,8 +57,11 @@ nav ul li a {
 }
 
 .page-title {
-    font-size: 30px;
     text-align: center;
+}
+
+.lucy-title, .page-title {
+    font-size: 30px;
     font-weight: bold;
     color: #C73C63;
     margin-bottom: 60px;
@@ -234,6 +237,51 @@ nav ul li a {
     width: 100%;
 }
 
+.story {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.meet {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    line-height: 3vh;
+}
+
+.meet div {
+    padding-left: 30px;
+}
+
+.meet img {
+    width: 50vw;
+}
+
+.lucy img {
+    width: 40vw;
+}
+
+.quote-card, .meet {
+    background-color:#C73C63;
+    color: white;
+    padding: 30px;
+}
+
+.quote-card {
+    width: 45vw;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    height: 70%;
+}
+
+.lucy-bio {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 /* After An Assault */
 
 .after-an-assault-recovery {
@@ -301,8 +349,6 @@ nav ul li a {
 .after-text {
     line-height: 5vh;
 }
-
-
 
 /* footer */
 
