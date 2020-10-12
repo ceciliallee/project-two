@@ -161,8 +161,9 @@ nav ul li a {
     background-color: white;
     color: black;
     width: 70vw;
-    padding: 20px;
+    padding: 20px 60px;
     border-radius: 5px;
+    margin-left: 10px;
 }
 /* Content Credits Cards */
 
@@ -204,7 +205,49 @@ nav ul li a {
     transition: background-color 1s;
 }
 
+/* Stories */
+
+.adam {
+    display: flex;
+    background-color:#C73C63;
+    color: white;
+}
+
+.adam-button {
+    padding: 10px 20px;
+    border: solid 2px white;
+    display: inline-block;
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.adam-text {
+    padding: 30px;
+    display: flex;
+    line-height: 3vh;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.adam img {
+    width: 100%;
+}
+
 /* After An Assault */
+
+.after-an-assault-recovery {
+    background-image: url(../img/afterassaultbg.svg);
+    /* background-size: cover; */
+    background-size: cover;
+}
+
+.aaa-inside {
+    margin-left: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-right: 30px;
+}
 
 .after-an-assault-top {
     display: flex;
