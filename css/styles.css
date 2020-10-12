@@ -5,6 +5,10 @@ html, body {
     padding: 0;
 }
 
+.landing {
+    overflow: hidden;
+}
+
 main {
     margin-bottom: 60px;
     margin-top: 20px;
@@ -42,9 +46,14 @@ nav ul li a {
     width: 60%;
 }
 
+.card {
+    -webkit-box-shadow: 2px 3px 5px -1px rgba(0,0,0,0.2);
+    -moz-box-shadow: 2px 3px 5px -1px rgba(0,0,0,0.2);
+    box-shadow: 2px 3px 5px -1px rgba(0,0,0,0.2);
+}
+
 #overlay, #hamburger {
     display: none;
-    
 }
 
 .page-title {
@@ -53,7 +62,7 @@ nav ul li a {
     font-weight: bold;
     color: #C73C63;
     margin-bottom: 60px;
-    margin-top: 40px;
+    margin-top: 60px;
 }
 
 .link {
@@ -67,7 +76,6 @@ nav ul li a {
     bottom: -50px;
     right: -50px;
     width: 100%;
-    
 }
 
 .main {
@@ -97,7 +105,7 @@ nav ul li a {
     justify-content: space-between;
 }
 
-.main-buttons a {
+.main-buttons a, .defining-assault-top a {
     padding: 10px 20px;
     border: solid 2px #C73C63;
     display: inline-block;
@@ -105,6 +113,7 @@ nav ul li a {
     font-size: 15px;
     text-decoration: none;
 }
+
 
 #menu li:hover {
     font-weight: bold;
@@ -117,16 +126,53 @@ nav ul li a {
     transition: color 1s;
 }
 
+
+/* Defining Assault */
+
+.defining-assault-top {
+    display: flex;
+    height: 30px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.random {
+    margin-right: 35vw;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    color: #C73C63;
+}
+
+.defining-assault-card {
+    color: white;
+    background-color:#C73C63;
+    padding: 30px;
+    line-height: 3vw;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.resources {
+    display: flex;
+}
+
+.white-card {
+    background-color: white;
+    color: black;
+    width: 70vw;
+    padding: 20px;
+    border-radius: 5px;
+}
 /* Content Credits Cards */
 
 .credits-cards {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    
 }
 
-.card {
+.credits-card {
     color: white;
     background-color:#C73C63;
     border-radius: 5px;
@@ -184,7 +230,14 @@ nav ul li a {
     background-color:#C73C63;
     display: flex;
     align-items: center;
-    
+}
+
+.after-card-1 {
+    margin-right: 30px;
+}
+
+.after-card-2 {
+    margin-left: 30px;
 }
 
 .after-top {
@@ -204,8 +257,8 @@ nav ul li a {
 
 .after-text {
     line-height: 5vh;
-    margin-left: 80px;
 }
+
 
 
 /* footer */
@@ -288,11 +341,30 @@ footer a {
     }
 
     #logo {
-        width: 300px;
+        width: 550px;
     }
 
     #logo img {
         width: 100px;
+    }
+
+    /* home page mobile */
+    @media (max-width: 767px) {
+        .blob {
+            display: none;
+        }
+    }
+
+    /* home page mobile */ 
+    @media (max-width: 767px) {
+        .credits-cards {
+           flex-direction: column;
+           align-items: center;
+           
+        }
+        .credits-card {
+            margin-top: 30px;
+        }
     }
 }
 
