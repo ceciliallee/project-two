@@ -78,15 +78,15 @@ nav ul li a {
     z-index: 1;
     bottom: -50px;
     right: -50px;
-    width: 100%;
+    width: 105%;
 }
 
 .main {
-    width: 30%;
+    width: 35%;
     position: absolute;
     z-index: 1;
-    padding-left: 60vw;
-    padding-top: 30vh;
+    padding-left: 57vw;
+    padding-top: 31vh;
 }
 
 .main .heading {
@@ -101,6 +101,7 @@ nav ul li a {
     font-size: 17px;
     font-weight: lighter;
     margin-bottom: 50px;
+    line-height: 2vh;
 }
 
 .main-buttons {
@@ -437,14 +438,7 @@ footer a {
         width: 100px;
     }
 
-    /* home page mobile */
-    @media (max-width: 767px) {
-        .blob {
-            display: none;
-        }
-    }
-
-    /* home page mobile */ 
+    /* credits page mobile */ 
     @media (max-width: 767px) {
         .credits-cards {
            flex-direction: column;
@@ -459,11 +453,21 @@ footer a {
     /* Landing Mobile */
 
     @media (max-width: 768px) {
+
+        .blob {
+            display: none;
+        }
+
+        .landing {
+            overflow: unset;
+        }
+
         .main {
             width: 85%;
             padding-left: 0;
-            padding-top: 40vh;
+            padding-top: 35vh;
         }
+
         #landing {
             width: 100%;
         }
@@ -485,6 +489,38 @@ footer a {
         nav ul {
             z-index: 2;
         }
+    }
+
+    /* Defining Assault Mobile */
+    @media (max-width: 768px) {
+        .page-title {
+            font-size: 28px;
+        }
+
+        .defining-assault-top {
+            flex-direction: column;
+            margin-bottom: 130px;
+        }
+
+        .defining-assault-top p {
+            text-align: center;
+            margin-right: 0 !important;
+        }
+
+        .defining-assault-card {
+            line-height: 5vh;
+        }
+
+        .resources {
+            flex-direction: column;
+        }
+
+        .white-card {
+            width: 60vw;
+            padding: 10px 40px;
+            margin-left: 0 !important;
+        }
+      
     }
 
     /* After Assault Mobile */
@@ -516,7 +552,29 @@ footer a {
 
         .lucy-bio {
             flex-direction: column;
+            justify-content: space-between;
+            width: 80%;
+            margin: auto;
         }
+
+        .lucy img {
+            margin-bottom: 30px;
+            width: 80%;
+        }
+
+        iframe {
+            width: 400px;
+            height: 300px;
+        }
+
+        .meet {
+            width: 90%;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 20px;
+            margin-top: 10px;
+        }
+
     }
 }
 
