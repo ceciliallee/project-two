@@ -215,6 +215,7 @@ nav ul li a {
     display: flex;
     background-color:#C73C63;
     color: white;
+    height: 80vh;
 }
 
 .adam-button {
@@ -235,7 +236,7 @@ nav ul li a {
 }
 
 .adam img {
-    width: 100%;
+    width: 60%;
 }
 
 .story {
@@ -249,7 +250,7 @@ nav ul li a {
     width: 40%;
     display: flex;
     justify-content: space-between;
-    line-height: 3vh;
+    /* line-height: 3vh; */
 }
 
 .meet div {
@@ -257,7 +258,7 @@ nav ul li a {
 }
 
 .meet img {
-    width: 50vw;
+    width: 20vw;
 }
 
 .lucy img {
